@@ -74,6 +74,7 @@ in
             trap "_status=1" ERR
 
             # Ensure a consistent umask.
+            set -vx
             umask 0022
 
             ${
